@@ -4,7 +4,7 @@ import ContactList from './ContactList';
 import Filter from './Filter';
 import Section from './Section';
 import { nanoid } from 'nanoid';
-import PropTypes from 'prop-types';
+//import PropTypes from 'prop-types';
 
 export class App extends Component {
   state = {
@@ -52,7 +52,7 @@ export class App extends Component {
   };
 
   render() {
-    const { contacts, filter } = this.state;
+    const { filter } = this.state;
     const visibleContacts = this.getVisibleContact();
     return (
       <div>
@@ -67,4 +67,3 @@ export class App extends Component {
       );
   };
 };
-
